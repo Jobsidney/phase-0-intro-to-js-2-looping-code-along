@@ -1,18 +1,16 @@
 // Code your solutions in this file
 
-const names = ["Guadalupe", "Ollie","Aki"];
+const names = ["Guadalupe","Ollie","Aki"];
 const thankYou=[]
 function writeCards(names,event){
     for (let person = 0; person < names.length; person++) {
-        thankYou.push(`Thank you,${names[person]}, for the wonderful ${event} gift!`);
+        thankYou.push(`Thank you, ${names[person]},  for the wonderful ${event} gift!`);
         
     }
     return thankYou;
 
 
 }
-writeCards(names,"surprise")
-console.log(thankYou);
 
 function countDown(num){
 
@@ -22,4 +20,6 @@ function countDown(num){
         
     }
 }
+writeCards(names,"surprise");
+console.log(thankYou);
 countDown(4);
